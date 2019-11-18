@@ -1,5 +1,5 @@
 # ----------------------------------------------------------------------
-#   Makefile to build the minimal.cc example on armv6 RPi Zero W
+#   Makefile to build the edgetpu cpp examples on armv6 RPi Zero W
 #
 #   See https://github.com/cloudwiser/TensorFlowLiteRPIZeroTPU for the
 #   complete set of preequisite steps
@@ -21,6 +21,8 @@ minimal: minimal.cc model_utils.cc
 	-L$(TENSORFLOW_DIR)/edgetpu/libedgetpu/direct/armv6/ \
 	-ltensorflow-lite -l:libedgetpu.so.1.0 \
 	-lstdc++ -lpthread -lm -lz -ldl
+
+all: minimal
 
 clean:
 	rm -f minimal

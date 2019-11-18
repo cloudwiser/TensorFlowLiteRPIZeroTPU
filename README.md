@@ -46,8 +46,8 @@ Now rename the original `Makefile` in `<path_to>/tensorflow/edgetpu/src/cpp/exam
 
 Edit the new `Makefile` and set your `TENSORFLOW_DIR` to the relevant path
 
-Run `make` to compile and link `minimal.cc` and `model_utils.cc`
-Check you have the `minimal` binary if the make completes silently
+Run `make all` to compile and link `minimal`
+Check you have this binary if the make completes silently
 
 Next we require the tflite model and source image for `minimal` so copy the `mobilenet_v1_1.0_224_quant_edgetpu.tflite` and `resized_cat.bmp` files from `<path_to>/tensorflow/edgetpu/test_data` into this `examples` directory
 
