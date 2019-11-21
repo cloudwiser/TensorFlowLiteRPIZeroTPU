@@ -5,7 +5,10 @@
 
 This guide outlines the steps to get the `minimal` C++ example provided in the Google Coral TPU `edgetpu` distro running on the Raspberry Pi Zero W
 
-If you want to just get up-and-running then Google provide an SD image for the Raspberry Pi Zero W at https://github.com/google-coral/edgetpu-platforms/releases/tag/v1.9.2 ...but if you want to understand the build process and potential issues you might hit, read on!
+If you want to just get up-and-running with the Python examples then Google provide an SD image for the Raspberry Pi Zero W at https://github.com/google-coral/edgetpu-platforms/releases/tag/v1.9.2 
+Note that the manual install fails currently due to the wrong version of `libedgetpu.so.1.0` being installed in `/usr/lib/arm-linux-gnueabihf` - see later for how to fix this.
+
+If you want to run the C++ sample and the associated build process, read on!
 
 First of all, you'll need to purchase a Coral TPU USB stick from https://coral.withgoogle.com/products/
 
