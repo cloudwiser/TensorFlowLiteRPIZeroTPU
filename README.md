@@ -24,7 +24,7 @@ Bus 001 Device 003: ID 18d1:9302 Google Inc.
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 ```
 
-Note that if the (Google) device doesn't appear, check you are not running other USB drivers e.g. a virtual network connection from your client to your RPi Zero W via USB. If you are, remove your SD and edit the image to amend cmdline.txt, config.txt, etc. files to disable these drivers
+Note that if the (Google) device doesn't appear, check you are not running other USB drivers e.g. a ssh connection from your client to your RPi Zero W via USB. If you are, remove your SD and edit the image to reverse any changes in `cmdline.txt` and `config.txt` files to disable these drivers (see https://desertbot.io/blog/ssh-into-pi-zero-over-usb)
 
 Next you need to build the `lib_tensorflow-lite.a` in `<path_to>/tensorflow/tensorflow/lite/tools/make/gen/rpi_armv6/lib`. I have a repo that outlines this process (warning: it takes time if you are native compiling on the RPi Zero W) at https://github.com/cloudwiser/TensorFlowLiteRPIZero
 
@@ -32,7 +32,7 @@ With this complete and working on the non-TPU samples, proceed with the `edgetpu
 
 Also, ensure you have the the required external dependencies via...
 ```sh
-$ <path_to>/tensorflow/tensorflow/lite/tools/make/download_dependencies.sh`
+$ <path_to>/tensorflow/tensorflow/lite/tools/make/download_dependencies.sh
 ```
 
 FWIW, I installed the runtime package under `~/tensorflow/edgetpu`...so if you hit build problems, it maybe down to path dependencies
