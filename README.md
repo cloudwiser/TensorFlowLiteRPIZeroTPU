@@ -1,5 +1,5 @@
 <img  align="left"  width="120"  height="120"  src="https://avatars0.githubusercontent.com/u/15658638?s=200&v=4">
-<img  align="centre"  width="85"  height="30"  src="https://codelabs.developers.google.com/codelabs/edgetpu-classifier/img/9f1dccf093ab1f6d.png">
+<img  align="centre"  width="85"  height="30"  src="./coral-logo.png">
 
 ### TensorFlow Lite & Coral TPU: C++ examples on Raspberry Pi Zero W
 
